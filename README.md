@@ -9,7 +9,7 @@ Using lazy concurrent dictionary to ensure thread safety for unsafe methods
 >
 > - `DefaultConcurrentDictionary` : use default implementation of concurrent dictionary, methods like `GetOrAdd` or `AddOrUpdate` are not thread safe (see [link](https://andrewlock.net/making-getoradd-on-concurrentdictionary-thread-safe-using-lazy/))
 >
-> - `LazyConcurrentDictionary` : use custom implementation of concurrent dictionary, methods like `GetOrAdd` or `AddOrUpdate` are thread safe (see [link](https://andrewlock.net/making-getoradd-on-concurrentdictionary-thread-safe-using-lazy/))
+> - `LazyConcurrentDictionary` : use custom implementation (run once, lazy-loading) of concurrent dictionary, methods like `GetOrAdd` or `AddOrUpdate` are thread safe (see [link](https://andrewlock.net/making-getoradd-on-concurrentdictionary-thread-safe-using-lazy/))
 >
 > ![LazyConcurrentDictionaryDemo](screenshots/LazyConcurrentDictionaryDemo.png)
 >
